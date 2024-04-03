@@ -327,6 +327,7 @@ local tbl =
 				conditions = 
 				{
 				},
+				enabled = false,
 				mechanicTime = 12,
 				name = "---GNB---",
 				timelineIndex = 3,
@@ -367,6 +368,7 @@ local tbl =
 				conditions = 
 				{
 				},
+				enabled = false,
 				mechanicTime = 12,
 				name = "Rampart Prepull",
 				timelineIndex = 3,
@@ -844,7 +846,7 @@ local tbl =
 							aType = "Variable",
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightMouse",
 							subtypeRangeCheckSourceSubType = "Lowest HP",
-							subtypeRangeCheckSourceType = "DPS",
+							subtypeRangeCheckSourceType = "Melee DPS",
 							targetType = "Party",
 							uuid = "4c8fdf58-4e27-f8b3-8e3d-e4ebb1c0d540",
 							variableIsHover = true,
@@ -1195,6 +1197,14 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"dd03f53b-3887-3f82-a4d1-800a33821b00",
+									true,
+								},
+							},
 							gVar = "ACR_RikuDRK2_Hotbar_ShirkOT",
 							uuid = "09fa1a2e-e897-1bf3-a372-bc843445dfb8",
 							variableTogglesType = 2,
@@ -1209,7 +1219,7 @@ local tbl =
 						data = 
 						{
 							conditionType = 4,
-							enmityValue = 95,
+							enmityValue = 90,
 							uuid = "dd03f53b-3887-3f82-a4d1-800a33821b00",
 							version = 2,
 						},
@@ -2336,37 +2346,8 @@ local tbl =
 				mechanicTime = 328,
 				name = "HoS",
 				timelineIndex = 43,
-				timerOffset = 2,
+				timerOffset = -1,
 				uuid = "06d9bd86-b8c5-71dd-a17a-882bc922d836",
-				version = 2,
-			},
-		},
-	},
-	[44] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							uuid = "06a8985c-eb49-11f0-b710-bff70624154d",
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 337,
-				name = "HoS",
-				timelineIndex = 44,
-				timerOffset = -7,
-				uuid = "835b6e1f-de10-374a-a6bb-d8b8c9abd525",
 				version = 2,
 			},
 		},
@@ -2508,7 +2489,7 @@ local tbl =
 				mechanicTime = 383,
 				name = "HoS",
 				timelineIndex = 54,
-				timerOffset = -2,
+				timerOffset = 3,
 				uuid = "ae032b55-4d84-e56b-a1c6-2c747c8d308a",
 				version = 2,
 			},
@@ -3233,6 +3214,14 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"f67f7c4c-015c-1fe1-a50f-55534a0001dc",
+									true,
+								},
+							},
 							gVar = "ACR_RikuDRK2_Hotbar_Grit",
 							uuid = "6b1f59bb-356f-8e39-8a5a-119be8159dff",
 							variableTogglesType = 2,
@@ -3250,6 +3239,17 @@ local tbl =
 							buffID = 1833,
 							category = "Self",
 							uuid = "b23c3ff0-b264-132a-91dc-3f3ba7499251",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							uuid = "f67f7c4c-015c-1fe1-a50f-55534a0001dc",
 							version = 2,
 						},
 					},
@@ -5330,6 +5330,45 @@ local tbl =
 				name = "-----disable-----",
 				timelineIndex = 118,
 				uuid = "076f0e31-81ed-9ea2-a3db-de06e71b0741",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Hotbar_Grit",
+							uuid = "ba2b4201-48cf-2b17-8f59-907d0066273f",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							uuid = "c0cf5e87-2644-38cc-9bb3-6e43a0721666",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 1000,
+				name = "stance check",
+				timelineIndex = 118,
+				uuid = "c4f9f8b3-1478-c11b-a71f-024b11eb6726",
 				version = 2,
 			},
 		},
