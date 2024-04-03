@@ -2632,7 +2632,7 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightMT",
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
 							uuid = "376b55c5-72bb-ade3-9517-713d6130ddee",
 							variableTogglesType = 3,
 							version = 2,
@@ -5333,45 +5333,6 @@ local tbl =
 				version = 2,
 			},
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Hotbar_Grit",
-							uuid = "ba2b4201-48cf-2b17-8f59-907d0066273f",
-							variableTogglesType = 2,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 743,
-							category = "Self",
-							uuid = "c0cf5e87-2644-38cc-9bb3-6e43a0721666",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 1000,
-				name = "stance check",
-				timelineIndex = 118,
-				uuid = "c4f9f8b3-1478-c11b-a71f-024b11eb6726",
-				version = 2,
-			},
-		},
 	},
 	[120] = 
 	{
@@ -6200,6 +6161,16 @@ local tbl =
 							version = 2,
 						},
 					},
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_CD",
+							uuid = "e03d071a-75c1-62f7-9aa2-d0c5144d07b6",
+							version = 2,
+						},
+					},
 				},
 				conditions = 
 				{
@@ -6257,24 +6228,42 @@ local tbl =
 							},
 						},
 					},
+				},
+				enabled = false,
+				timerOffset = -1,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
 					
 					{
-						type = "add",
-						value = 
+						data = 
 						{
-							data = 
-							{
-								aType = "Variable",
-								gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
-								uuid = "1567ba83-a6d5-50cf-8885-aa39e83df48f",
-								variableTogglesType = 3,
-								version = 2,
-							},
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightMouse",
+							targetType = "DPS",
+							uuid = "5288ef59-fb42-b857-aa75-5c1bebbb2e99",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
 						},
 					},
 				},
-				timerOffset = -1,
+				conditions = 
+				{
+				},
+				mechanicTime = 1116,
+				name = "tbn melee",
+				timelineIndex = 155,
+				timerOffset = 3,
+				uuid = "77a0baa1-9be6-e0e3-bf56-c51b713a4850",
+				version = 2,
 			},
+			inheritedIndex = 2,
 		},
 	},
 	[159] = 
@@ -6304,6 +6293,25 @@ local tbl =
 							version = 2,
 						},
 					},
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"b022d22b-826f-0a66-90e3-430c846202fc",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Hotbar_Grit",
+							uuid = "0f1bbf68-ec1d-1a6a-9bc8-552cfe5a6930",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
 				},
 				conditions = 
 				{
@@ -6315,6 +6323,17 @@ local tbl =
 							buffID = 1833,
 							category = "Self",
 							uuid = "e170dfe0-eb5c-94b1-8c8b-3dbb4814e8c4",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							uuid = "b022d22b-826f-0a66-90e3-430c846202fc",
 							version = 2,
 						},
 					},
