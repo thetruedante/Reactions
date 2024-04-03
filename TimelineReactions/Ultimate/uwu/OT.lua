@@ -113,7 +113,7 @@ local tbl =
 				mechanicTime = 9,
 				name = "Jump in",
 				timelineIndex = 2,
-				timerOffset = -9,
+				timerOffset = -9.5,
 				uuid = "11e765ad-6336-361c-be48-b58ffa847754",
 				version = 2,
 			},
@@ -438,17 +438,6 @@ local tbl =
 							version = 2,
 						},
 					},
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_Rampart",
-							uuid = "95250d56-9eed-e70d-848f-c48a16d3db8d",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
 				},
 				conditions = 
 				{
@@ -539,6 +528,25 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"8b5f32dd-2302-d766-b4c7-13d10e08190f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK2_Hotbar_Provoke",
+							uuid = "d48f0678-e262-98be-b7eb-5cc06a943498",
+							variableTogglesType = 2,
+							version = 2,
+						},
 					},
 				},
 				conditions = 
@@ -2476,7 +2484,7 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightMT",
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
 							uuid = "b01283fa-0870-9b00-a278-54552123e601",
 							variableTogglesType = 3,
 							version = 2,
@@ -2550,7 +2558,7 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightMT",
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
 							uuid = "376b55c5-72bb-ade3-9517-713d6130ddee",
 							variableTogglesType = 3,
 							version = 2,
