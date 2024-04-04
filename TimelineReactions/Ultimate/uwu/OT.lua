@@ -5233,47 +5233,11 @@ local tbl =
 		{
 			data = 
 			{
-				name = "provoke",
-				uuid = "46ba7483-8665-e0b9-9df7-4b7b94a16073",
-				version = 2,
-			},
-			inheritedIndex = 6,
-			inheritedObjectUUID = "9a588de5-a819-ebf1-9c24-90abe0fbf357",
-			inheritedOverwrites = 
-			{
-				actions = 
-				{
-					
-					{
-						type = "add",
-						value = 
-						{
-							data = 
-							{
-								name = "",
-								uuid = "8a949a29-46f5-c321-abef-d8211de29bf4",
-								version = 2,
-							},
-							inheritedObjectUUID = "3fc8b4a0-9741-4ab7-8335-3bcab7675d65",
-							inheritedOverwrites = 
-							{
-								gVar = "ACR_RikuDRK2_CD",
-							},
-						},
-					},
-				},
-				timerOffset = 0.10000000149012,
-			},
-		},
-		
-		{
-			data = 
-			{
 				name = "stance on",
 				uuid = "48537923-5680-3a5b-862b-151d6973950f",
 				version = 2,
 			},
-			inheritedIndex = 7,
+			inheritedIndex = 6,
 			inheritedObjectUUID = "770aa508-420d-f1b9-be25-0b2ab65c014b",
 			inheritedOverwrites = 
 			{
@@ -5339,6 +5303,44 @@ local tbl =
 				timelineIndex = 118,
 				uuid = "076f0e31-81ed-9ea2-a3db-de06e71b0741",
 				version = 2,
+			},
+			inheritedIndex = 7,
+		},
+		
+		{
+			data = 
+			{
+				name = "provoke",
+				uuid = "46ba7483-8665-e0b9-9df7-4b7b94a16073",
+				version = 2,
+			},
+			inheritedIndex = 8,
+			inheritedObjectUUID = "9a588de5-a819-ebf1-9c24-90abe0fbf357",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "8a949a29-46f5-c321-abef-d8211de29bf4",
+								version = 2,
+							},
+							inheritedObjectUUID = "3fc8b4a0-9741-4ab7-8335-3bcab7675d65",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_CD",
+							},
+						},
+					},
+				},
+				enabled = false,
+				timerOffset = 0.10000000149012,
 			},
 		},
 	},
