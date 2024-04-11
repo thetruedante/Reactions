@@ -572,6 +572,58 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"b2343161-83d8-0c81-8dfb-cf6b93f1a605",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR2_CD",
+							setTarget = true,
+							targetContentID = 1644,
+							targetType = "ContentID",
+							uuid = "ec04e580-25d4-6789-b671-acf2b24469cb",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7533,
+							category = "Self",
+							conditionType = 4,
+							uuid = "b2343161-83d8-0c81-8dfb-cf6b93f1a605",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 18,
+				name = "Garuda Target",
+				timeRange = true,
+				timelineIndex = 4,
+				timerEndOffset = 5,
+				uuid = "d7ea4bef-941b-69f5-8fd4-8e3994647b79",
+				version = 2,
+			},
+		},
 	},
 	[6] = 
 	{
@@ -1993,6 +2045,37 @@ local tbl =
 	},
 	[37] = 
 	{
+		
+		{
+			data = 
+			{
+				name = "Enable Cooldowns",
+				uuid = "3ca28149-c7b7-7b75-95a5-678a458e4ddb",
+				version = 2,
+			},
+			inheritedObjectUUID = "87a5fc4c-a657-e46e-8c81-dab5f564e86f",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								aType = "Variable",
+								gVar = "ACR_RikuDRK2_HoldGauge",
+								gVarValue = 2,
+								uuid = "938b3ab5-142b-f8b2-a41b-ae2d2444a6b9",
+								version = 2,
+							},
+						},
+					},
+				},
+			},
+		},
 		
 		{
 			data = 
@@ -5938,10 +6021,11 @@ local tbl =
 				mechanicTime = 1048,
 				name = "HoS",
 				timelineIndex = 133,
-				timerOffset = 3,
+				timerOffset = 6,
 				uuid = "e558cf5c-b8a0-28af-8ed3-cf3b62bd16f3",
 				version = 2,
 			},
+			inheritedIndex = 2,
 		},
 	},
 	[141] = 
@@ -6026,7 +6110,7 @@ local tbl =
 				name = "HoC",
 				timelineIndex = 141,
 				timerEndOffset = 7,
-				timerOffset = -1,
+				timerOffset = -4,
 				uuid = "0847cfd0-0e77-cfe7-ba8c-a317365b811c",
 				version = 2,
 			},
