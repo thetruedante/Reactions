@@ -463,23 +463,6 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "Alert",
-							alertColor = -1,
-							alertPriority = 2,
-							alertScale = 1,
-							alertTTS = true,
-							alertText = "Spiny Plume!",
-							alertVolume = 50,
-							gVar = "ACR_RikuGNB2_CD",
-							uuid = "69f40e3a-5d3d-c403-96a5-adf6ab674388",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
 							aType = "Misc",
 							gVar = "ACR_RikuWAR2_CD",
 							setTarget = true,
@@ -1279,7 +1262,7 @@ local tbl =
 						data = 
 						{
 							conditionType = 4,
-							enmityValue = 90,
+							enmityValue = 95,
 							uuid = "dd03f53b-3887-3f82-a4d1-800a33821b00",
 							version = 2,
 						},
@@ -1918,7 +1901,7 @@ local tbl =
 							inheritedObjectUUID = "39204d63-f26a-0f62-a67d-41136f454115",
 							inheritedOverwrites = 
 							{
-								hpValue = 10,
+								hpValue = 5,
 							},
 						},
 					},
@@ -1958,6 +1941,14 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"ba2dc70b-8977-6518-93f7-67c425b21753",
+									true,
+								},
+							},
 							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightMT",
 							uuid = "19d095c1-8ed3-80dc-b31b-25e8070471af",
 							variableTogglesType = 3,
@@ -2424,7 +2415,7 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightMT",
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightOT",
 							uuid = "376b55c5-72bb-ade3-9517-713d6130ddee",
 							variableTogglesType = 3,
 							version = 2,
@@ -3252,17 +3243,6 @@ local tbl =
 							version = 2,
 						},
 					},
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Hotbar_Plunge",
-							uuid = "c8a786c9-7c19-479a-bbba-097bb2d3949b",
-							variableTogglesType = 2,
-							version = 2,
-						},
-					},
 				},
 				conditions = 
 				{
@@ -3469,7 +3449,6 @@ local tbl =
 				mechanicTime = 631,
 				name = "Sprint",
 				timelineIndex = 82,
-				timerOffset = 3,
 				uuid = "1c6fae5e-4ddd-a766-beda-a8d4bf6ad903",
 				version = 2,
 			},
